@@ -1,45 +1,38 @@
-# coursUM320202021
-le support de cours de 2020 - 2021
- 
-#les questions de culture générale - introduction
- 
-* Date et nom de l'inventeur du web : 
-    Tim Berners-Lee en 1989
+# Projet Alexandre Klein, Sofian Teraf, Karim Salah Salah
 
-* La différence entre le Web et internet ?
-Internet est la structure sur lequelles l'application web existe.
-Internet c'est le réseau globale. Et le web est un des services de internet.
+### Voici notre projet pour le module d'intégration de données connectées :
 
-* Les 3 technologies fondatrices du Web et à quoi elles servent ?
-- Le HTTP : qui est le protocole de transfert réseaux au dessus d'IP. Il permet l'envoie de données.
-- Le HTML : est un système de balisage ( lagage de description ) normé par le W3C pour permettre de décrire la structure d'une page web.
-- Les URI : système de nommage des Ressources.
+Descriptif : 
 
-* Qu’est-ce que l’interopérabilité ? 
-    Possibilité de communication entre deux ou plusieurs systèmes, appareils ou éléments informatiques.
+Nous avons fait un mashup entre l'api openweather et l'api Géo Gouv afin de connaître la météo en temps réel d'une ville française ainsi que quelques informations concernant celle-ci. (Ceci n'étant pas très rigoureux étant donné que l'api openweather ne permet pas d'obtenir les données météo de TOUTES les villes française) 
+Malgré tout, cela fonctionne avec la plus part d'entre-elles.
 
-* Qu'est ce que le web de données ? 
-Ca permet de relier les données entre elles sur le web par des URI.
-    Publication de données structurées et reliés entres elles sur le Web --> réseau global d'informations.
-le web des données est la demarche d'integrer ensemble des données disparates et de les organiser 
+L'api openweather nous permet de récupérer les données suivantes :
 
-* Qu'est-ce que ça veut dire pour vous "intégration de données connectées" ?
-L'intégration de données connectée est l'aggregation de données.
+1) Le nom de la ville
+2) La température
+3) La température ressentie
+4) la vitesse du vent
+5) L'humidité
 
-* En quoi cela peut vous servir dans un parcours Data Science ?
-Cela permet d'aller chercher des données et de constituer un corpus de données.
+Documentation : https://openweathermap.org/current
+L'api necessite une clé, nous avons donc créer un compte et obtenu la clé suivante : a6c947626014e0fef3f25939d39c9200
 
-#le sujet support d'exercice 
-Sur un github partagé, une branche par groupe, nous allons développer un moissoneur de données sur les EHPAD en France.
+Nous avons croisé ces données grace au nom de la ville.
+Nous récupérons les données suivantes de l'api Géo Gouv :
 
-#le sujet du projet en groupe
+1) Le nom de la ville
+2) Le code INSEE
+3) Le numéro de département
+4) La population
 
-Identifier des sources de données sur le Web.
-Récupérer des données à partir de ces sources.
-Les aggréger et les restituer.
-Identifier les difficultés de la démarche.
+Celle-ci renvoie un tableau d'une taille dépendant du nombre de ville contenant les caractères tapés dans le formulaire.
+Nous avons donc du faire correspondre la ville choisie avec celle récupérée.
 
-Par groupe de 4 ou 3.
+Documentation : https://geo.api.gouv.fr/decoupage-administratif
 
-Le livrable c'est un code client html javascript uniquement hébergé en githubpage.
+Nous avons utilisé BOOTSTRAP pour le HTML/CSS.
 
+Il est également possible de rentrer la ville en minuscule car nous avons crée une fonction (récupérée ici : https://www.equinode.com/blog/article/mettre-la-premiere-lettre-en-majuscule-ou-minuscule-avec-javascript) permettant de changer la première lettre en majuscule. En effet, lorsque ce n'était pas le cas, cela provoquait une erreure.
+
+La ville paramétrée par défaut est Montpellier.
