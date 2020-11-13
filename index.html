@@ -1,16 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
+  <head>
+    
+    <meta charset="utf-8" />
+   
+    <!-- Lien Bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-    </head>
+    <!-- Chargement Css  -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <body>
-        <div id=maincontent>
+    <title>Projet API</title>
+  </head>
 
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 my-3">
+          <form>
+            <!-- Formulaire  -->
+            <div class="form-group">
+              <p>Veuillez entrer une ville :</p>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+
+            <button type="submit" class="btn btn-info btn-block">
+              Rechercher
+            </button>
+          </form>
         </div>
-    </body>
+        <!-- Box  -->
+        <div class="BBC">
+          <div class="box-container">
+            <div id="city" class="box"></div>
+            <div id="dep" class="box"></div>
+            <div id="code" class="box"></div>
+            <div id="population" class="box"></div>
+            <div id="temp" class="box"></div>
+            <div id="humidity" class="box"></div>
+            <div id="wind" class="box"></div> 
+            <div id="feels_like" class="box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>K.A.S</footer>
+    <!-- Chargement js  -->
+    <script src="js/api.js"></script>
+  </body>
 </html>
 
-<script  src="scriptprojet.js">
-</script>
+
+
+
+
+
