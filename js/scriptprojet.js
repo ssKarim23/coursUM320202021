@@ -20,7 +20,7 @@ let aplapi = function (city)
             document.querySelector('#city').innerHTML = data1.name;
             document.querySelector('#temp').innerHTML = 'Température ' + data1.main.temp + '°';
             document.querySelector('#feels_like').innerHTML = 'Ressenti ' + data1.main.feels_like + '°';
-            document.querySelector('#wind').innerHTML = 'Vent ' + data1.wind.speed + '';
+            document.querySelector('#wind').innerHTML = 'Vent ' + data1.wind.speed + 'km/h';
             document.querySelector('#humidity').innerHTML = 'Humidité ' + data1.main.humidity + '  %'
           }
       )
