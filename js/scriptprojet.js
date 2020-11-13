@@ -1,4 +1,4 @@
-const cleapi = '366e5f70d9e70e45364730cb9a4f0221';
+const cleapi = 'a6c947626014e0fef3f25939d39c9200';
 
 /*Appel a l'API openWeather/geo avec ville en parametre de fonction*/
 let aplapi = function (city) 
