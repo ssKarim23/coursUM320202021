@@ -2,6 +2,8 @@
 
 ### Voici notre projet pour le module d'intégration de données connectées :
 
+*Nous sommes tous les trois confinés ensemble et avons réalisé le projet sur un seul ordinateur car nous n'avions que celui de Karim.*
+
 Descriptif : 
 
 Nous avons fait un mashup entre l'api openweather et l'api Géo Gouv afin de connaître la météo en temps réel d'une ville française ainsi que quelques informations concernant celle-ci. (Ceci n'étant pas très rigoureux étant donné que l'api openweather ne permet pas d'obtenir les données météo de TOUTES les villes française) 
