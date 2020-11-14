@@ -2,7 +2,7 @@
 
 ### Voici notre projet pour le module d'intégration de données connectées :
 
-*Nous sommes tous les trois confinés ensemble et avons réalisé le projet sur un seul ordinateur car nous n'avions que celui de Karim.*
+*Nous sommes tous les trois confinés ensemble et avons envoyé le projet depuis un seul ordinateur, celui de karim .*
 
 Descriptif : 
 
